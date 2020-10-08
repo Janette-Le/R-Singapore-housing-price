@@ -3,7 +3,7 @@
 **:black_nib: [Codes file](https://github.com/Janette-Le/R-Singapore-housing-price/blob/main/Codes.R)**<br>
 **:page_with_curl: [Report](https://github.com/Janette-Le/R-Singapore-housing-price/blob/main/Report.pdf)**
 
-<p align="justify">This project aims to provide insights and outcomes by analyzing using past data of private residential units, specifically condominiums in Singapore. The factors that affect customer's willingness to buy include the area of the flats, whether it’s a resale or new sale, leasehold of the flat, completion year, et cetera.  Developers can use these insights to make pricing decisions for both resale and new flats from observing the willingness to pay of buyers based on historical data.</p>
+<p align="justify">This project aims to provide insights and outcomes by analyzing using past data of private residential units, specifically condominiums in Singapore. The factors that affect customer's willingness to buy include the area of the flats, whether it’s a resale or new sale, leasehold of the flat, completion year, et cetera.<br>  Developers can use these insights to make pricing decisions for both resale and new flats from observing the willingness to pay of buyers based on historical data.</p>
 
 ## Project sections:
 
@@ -28,7 +28,7 @@
 <p align="justify">
   
   Regression analysis allows understanding of how the world operates and allows making of predictions. To obtain improved fit to the data, several explanatory variables could be used in the regression equation, and being known as multiple regression. The regression equation is still estimated by the least squares method.<br>
-For building multiple regression model, I use different methods, specifically, by hand, by using <code>stepIC()<\code> backwards, by sing LASSO method and PCR (Principle Components Regression) to built the models; then fitting them one by one into the test dataset.<br> 
+For building multiple regression model, I use different methods, specifically, by hand, by using <code>stepIC()</code> backwards, by sing LASSO method and PCR (Principle Components Regression) to built the models; then fitting them one by one into the test dataset.<br> 
 After that, comparing the predict accuracy of these model together to chose which on is the best models to predict dependent variable. The predictor variable in this case is Unit Price ($psm).</p>
 
 **Multiple regression**
