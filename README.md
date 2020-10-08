@@ -35,7 +35,14 @@ The original dataset included 8525 rows. After checking some statistics index an
 There are various existing categorical variables that needs to be modified before the model can be constructed, as they could not be measured on a quantitative scale. While handing the data set, Tenure was considered as complex character string. Getting rid of the unused information in each cells, this column turned to be category variables with 7 options.
 
 
-## Data visualization
+## Data visualization: Tableau<br>
+<p align="justify">When benchmarking the price time series, we can see clearly that the average unit price trend is upwards. At the start of May 2019, condominium price is 20% higher than it was in June 2018.</p>
+
+![image_2](/images/3.png)
+
+<p align="justify">The original dataset has 2 factors are location-related, which are Planning Region and Planning Area. There are 5 planning regions and 37 planning areas. It indicates that there are variations in the average unit price for different regions: the North and Central regions, known to be mature residential areas with good supply of nearby neighborhood amenities, have a slightly higher average price, while the North East, North and West regions offer lesser housing choices and are offered lower price due to higher inaccessibility to the central area. Toa Payoh area specifically enjoys a significantly high unit price, primarily due to it being central and also one of the oldest, most established residential hubs in Singapore.</p>
+
+![image_2](/images/5.png)
 
 # Multiple linear regression
 <p align="justify">
