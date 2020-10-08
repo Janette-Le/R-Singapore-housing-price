@@ -20,9 +20,22 @@
 5. [Conclusion](#conclusion)
 
 # Data
-<p align="justify">
-  
-  </p>
+## Data cleansing
+
+**Adding Class based on transacted price**<br>
+Range of transacted price was applied for classifiers involving class determination. The 25th percentile and 75th percentile of transacted price are used to segment transacted price into Low, Mid and High classes respectively. For condominiums with transacted price at most S$996,000, these condominiums are classified as the **Low class**. For condominiums with transacted price at least S$1,780,000, these condominiums are classified as the **High class**. For condominiums with transacted price between S$996,000 and S$1,780,00, these condominiums are classified as the **Mid class**.
+
+**Precluded Data**<br>
+Due to the limitations imposed by R software in which only a maximum of 32 categories can be processed, 5 categories are removed from the planning area. These planning areas are Downtown Core, Mandai, Museum, Orchard and Outram. They are chosen due to the minimal condominium sale data in these areas.
+
+**NA and Outliers values**<br>
+The original dataset included 8525 rows. After checking some statistics index and sknewness as well as the distribution of each variables, I removed 89 rows, and had a data with 8436 observation to work on it.
+
+**Variables to be modified**<br>
+There are various existing categorical variables that needs to be modified before the model can be constructed, as they could not be measured on a quantitative scale. While handing the data set, Tenure was considered as complex character string. Getting rid of the unused information in each cells, this column turned to be category variables with 7 options.
+
+
+## Data visualization
 
 # Multiple linear regression
 <p align="justify">
@@ -32,6 +45,7 @@ For building multiple regression model, I use different methods, specifically, b
 After that, comparing the predict accuracy of these model together to chose which on is the best models to predict dependent variable. The predictor variable in this case is Unit Price ($psm).</p>
 
 **Multiple regression**
+
 ![image_2](/images/2.PNG)
 
 **With Step backward** Based on Step backward result, the model contains 3 most significant variable named: Area, Transacted Price, Tenure, Completion Date, Type of Sale, Purchaser Address Indicator, Postal Code and Planning Region
